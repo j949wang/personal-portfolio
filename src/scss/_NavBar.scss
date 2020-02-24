@@ -1,0 +1,15 @@
+$navbar-light-hover-color: #fb1785;
+
+.navigation {
+  background-color: #f9f9f9;
+}
+
+.navlinks {
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.navlinks:hover {
+  transform: scale(1.1);
+  width: auto;
+}

@@ -9,29 +9,32 @@ import Navbar from "react-bootstrap/Navbar";
 class NavBar extends Component {
   render() {
     return (
-      <Navbar className="navigation" variant="light" expand="md">
+      <Navbar className="navigation pt-5 pb-5" variant="light" expand="md">
         <Navbar.Brand href="#home">Need a Logo...</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav justify-content-center">
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="navlinks" href="#home">
+            {/* <button> */}
+            <Nav.Link className="navlinks navBtn" href="#home">
               Home
-              <FontAwesomeIcon className="ml-1" icon={faHome} />
+              <FontAwesomeIcon className="ml-1 home-icon" icon={faHome} />
             </Nav.Link>
-            <Nav.Link className="navlinks" href="#experience">
+            {/* </button> */}
+            <Nav.Link className="navlinks navBtn" href="#experience">
               Experience
             </Nav.Link>
-            <Nav.Link className="navlinks" href="#resume">
+            <Nav.Link className="navlinks navBtn" href="#resume">
               Resumé
             </Nav.Link>
-            <Nav.Item className="d-inline-flex ml-1 row justify-content-center">
-              <Nav.Link className="navlinks mr-2" href="#linkedin">
+            <div className="verticalLine"></div>
+            <div className="socialContainer">
+              <Nav.Link className="navlinks mr-2 socialIcons" href="#linkedin">
                 <FontAwesomeIcon className="ml-1" icon={faLinkedin} />
               </Nav.Link>
-              <Nav.Link className="navlinks mr-2" href="#github">
+              <Nav.Link className="navlinks mr-2 socialIcons" href="#github">
                 <FontAwesomeIcon className="ml-1" icon={faGithub} />
               </Nav.Link>
-            </Nav.Item>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

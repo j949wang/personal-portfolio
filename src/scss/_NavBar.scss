@@ -1,15 +1,80 @@
-$navbar-light-hover-color: #fb1785;
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+$navbar-light-hover-color: #fa7a70;
+
+.home-icon {
+  margin-bottom: 1px;
+}
+
+.navbar {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+}
 
 .navigation {
   background-color: #f9f9f9;
 }
 
 .navlinks {
-  font-weight: 500;
-  transition: 0.3s ease-in-out;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+    background 1s ease;
+}
+
+.navlinks.navBtn {
+  background: inherit;
+  border-radius: 4px;
+  background-position: center;
+  background-image: radial-gradient(circle, transparent 1%, #fcf5f5 1%);
+  background-size: 15000%;
 }
 
 .navlinks:hover {
+  // letter-spacing: 2px;
   transform: scale(1.1);
-  width: auto;
+  // width: auto;
+}
+
+.navlinks.navBtn:active {
+  background-color: #fcbdbd;
+  transition: background 0s;
+  background-size: 100%;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.verticalLine {
+  border-left: 1px solid $navbar-light-hover-color;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/*************************************
+            MOBILE
+*************************************/
+
+@media screen and (max-width: 768px) {
+  .navlinks {
+    font-size: 1.3em;
+    text-align: start;
+    transition: letter-spacing 0.3s ease-in-out, color 0.3s ease-in-out,
+      background 1.4s;
+  }
+
+  .navlinks:hover {
+    transform: initial;
+    letter-spacing: 1.5px;
+  }
+
+  .socialContainer {
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .socialIcons {
+    font-size: 2em;
+  }
 }

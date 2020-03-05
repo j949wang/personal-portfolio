@@ -9,17 +9,23 @@ import Navbar from "react-bootstrap/Navbar";
 class NavBar extends Component {
   render() {
     return (
-      <Navbar className="navigation pt-5 pb-5" variant="light" expand="md">
+      <Navbar
+        className="navigation pt-5 pb-5"
+        sticky="top"
+        variant="light"
+        expand="md"
+      >
         <Navbar.Brand href="#home">Need a Logo...</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          className="navToggleBtn"
+          aria-controls="basic-navbar-nav"
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            {/* <button> */}
             <Nav.Link className="navlinks navBtn" href="#home">
               Home
               <FontAwesomeIcon className="ml-1 home-icon" icon={faHome} />
             </Nav.Link>
-            {/* </button> */}
             <Nav.Link className="navlinks navBtn" href="#experience">
               Experience
             </Nav.Link>

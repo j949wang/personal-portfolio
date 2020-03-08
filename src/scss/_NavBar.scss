@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 $navbar-light-hover-color: #fa7a70;
+$navbar-light-color: #edae98;
 
 .home-icon {
   margin-bottom: 1px;
@@ -12,11 +13,12 @@ $navbar-light-hover-color: #fa7a70;
 }
 
 .navigation {
-  background-color: #f9f9f9;
+  background-color: #f6f1ee;
 }
 
 .navlinks {
   font-size: 1.1em;
+  color: #ebbbaa;
   text-align: center;
   -webkit-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   -moz-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -61,7 +63,7 @@ $navbar-light-hover-color: #fa7a70;
             MOBILE
 *************************************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .navlinks {
     font-size: 1.3em;
     text-align: start;
@@ -87,6 +89,7 @@ $navbar-light-hover-color: #fa7a70;
 .navbar-toggle-icon {
   background: $navbar-light-hover-color;
 }
+
 // .navToggleBtn:hover {
 //   background: $navbar-light-hover-color;
 // }

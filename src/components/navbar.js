@@ -13,8 +13,7 @@ class NavBar extends Component {
         className="navigation pt-5 pb-5"
         sticky="top"
         variant="light"
-        expand="md"
-      >
+        expand="md">
         <Navbar.Brand href="#home">Need a Logo...</Navbar.Brand>
         <Navbar.Toggle
           className="navToggleBtn"

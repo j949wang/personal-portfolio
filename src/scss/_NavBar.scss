@@ -2,6 +2,7 @@
 
 $navbar-light-hover-color: #fa7a70;
 $navbar-light-color: #edae98;
+$navbar-light-active-color: #97534c;
 
 .home-icon {
   margin-bottom: 1px;
@@ -31,7 +32,7 @@ $navbar-light-color: #edae98;
   background: inherit;
   border-radius: 4px;
   background-position: center;
-  background-image: radial-gradient(circle, transparent 1%, #fcf5f5 1%);
+  background-image: radial-gradient(circle, transparent 1%, #f6f1ee 1%);
   background-size: 15000%;
 }
 

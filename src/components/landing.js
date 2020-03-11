@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import totoro from "../img/totoro-sketch.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -21,8 +23,8 @@ class Landing extends Component {
                 </div>
                 <p>{/* <Button variant="primary">Learn more</Button> */}</p>
               </Col>
-              <Col md="6" className="quoteContainer">
-                Image Here
+              <Col md="6" className="quoteContainer imgContainer">
+                <Image src={totoro} fluid />
               </Col>
             </Row>
           </Container>

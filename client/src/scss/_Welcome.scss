@@ -1,0 +1,159 @@
+.animationInProgress {
+  opacity: 1;
+  transition: all 800ms linear;
+}
+
+.animationDone {
+  opacity: 0;
+  transition: all 800ms linear;
+}
+
+#logoContainer {
+  width: 50%;
+}
+
+#landingLogo {
+  width: 50vw;
+  max-width: 80%;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s, fillLogo 0.5s ease forwards 3s;
+}
+
+#landingLogo path {
+  stroke: #ffbfbf;
+}
+
+#landingLogo path:nth-child(1) {
+  stroke-dasharray: 317;
+  stroke-dashoffset: 316.970947265625;
+  animation: lineDraw 2s ease forwards;
+}
+
+#landingLogo path:nth-child(2) {
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+  animation: lineDraw 2s ease forwards 0.2s;
+}
+
+#landingLogo path:nth-child(3) {
+  stroke-dasharray: 458;
+  stroke-dashoffset: 458;
+  animation: lineDraw 2s ease forwards 0.4s;
+}
+
+#landingLogo path:nth-child(4) {
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  animation: lineDraw 2s ease forwards 0.6s;
+}
+
+#landingLogo path:nth-child(5) {
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+  animation: lineDraw 2s ease forwards 0.8s;
+}
+
+#landingLogo path:nth-child(6) {
+  stroke-dasharray: 786;
+  stroke-dashoffset: 786;
+  animation: lineDraw 2s ease forwards 1s;
+}
+
+#landingLogo path:nth-child(7) {
+  stroke-dasharray: 457;
+  stroke-dashoffset: 457;
+  animation: lineDraw 2s ease forwards 1.2s;
+}
+
+#landingLogo path:nth-child(8) {
+  stroke-dasharray: 401;
+  stroke-dashoffset: 401;
+  animation: lineDraw 2s ease forwards 1.4s;
+}
+
+#landingLogo path:nth-child(9) {
+  stroke-dasharray: 605;
+  stroke-dashoffset: 605;
+  animation: lineDraw 2s ease forwards 1.6s;
+}
+
+.loadScreen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lineDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillLogo {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: #ffbfbf;
+  }
+}

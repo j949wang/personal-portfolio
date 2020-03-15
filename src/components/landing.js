@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-import totoro from "../img/totoro-sketch.png";
+import totoro from "../img/totoro-sketch-final.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 

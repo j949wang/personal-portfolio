@@ -1,0 +1,23 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j949wang/personal-portfolio.git"
+  },
+  "author": "Jiaxi Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j949wang/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/j949wang/personal-portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

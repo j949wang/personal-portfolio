@@ -8,6 +8,28 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 class Landing extends Component {
+  constructor() {
+    super();
+    this.state = {
+      data: null
+    };
+  }
+
+  componentDidMount() {
+    this.callBackendAPI()
+      .then(res => this.setState({ data: res.quote }))
+      .catch(err => console.log(err));
+  }
+
+  callBackendAPI = async () => {
+    const response = await fetch("/get_quote");
+    const body = await response.json();
+    if (response.status !== 200) {
+      throw Error(body.message);
+    }
+    return body;
+  };
+
   render() {
     return (
       <div>
@@ -18,9 +40,7 @@ class Landing extends Component {
                 <div className="quoteRow quoteTitle">
                   Welcome to my internet home.
                 </div>
-                <div className="quoteRow quote">
-                  This is where quotes will populate.
-                </div>
+                <div className="quoteRow quote">{this.state.data}</div>
                 <p>{/* <Button variant="primary">Learn more</Button> */}</p>
               </Col>
               <Col md="6" className="quoteContainer imgContainer">

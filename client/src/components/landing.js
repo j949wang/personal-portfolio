@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import totoro from "../img/totoro-sketch-final.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Scroll from "./scroll";
 
 class Landing extends Component {
   constructor() {
@@ -41,10 +42,14 @@ class Landing extends Component {
                   Welcome to my internet home.
                 </div>
                 <div className="quoteRow quote">{this.state.data}</div>
-                <p>{/* <Button variant="primary">Learn more</Button> */}</p>
               </Col>
               <Col md="6" className="quoteContainer imgContainer">
                 <Image src={totoro} fluid />
+              </Col>
+            </Row>
+            <Row className="landingRow">
+              <Col>
+                <Scroll />
               </Col>
             </Row>
           </Container>

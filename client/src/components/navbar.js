@@ -17,14 +17,14 @@ class NavBar extends Component {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="navlinks navBtn" href="#home">
+            <Nav.Link className="navlinks navBtn ml-2" href="#home">
               Home
               <FontAwesomeIcon className="ml-1 home-icon" icon={faHome} />
             </Nav.Link>
-            <Nav.Link className="navlinks navBtn" href="#experience">
+            <Nav.Link className="navlinks navBtn ml-2" href="#experience">
               Experience
             </Nav.Link>
-            <Nav.Link className="navlinks navBtn" href="#resume">
+            <Nav.Link className="navlinks navBtn ml-2" href="#resume">
               Resumé
             </Nav.Link>
             <div className="verticalLine"></div>

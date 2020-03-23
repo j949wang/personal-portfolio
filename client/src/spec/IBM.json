@@ -1,0 +1,8 @@
+{
+  "company": {
+    "name": "IBM",
+    "position": "Front-end Developer"
+  },
+  "description": "Designed modularized components. Reactified legacy services.",
+  "stack": "React, Node, Typescript, Mobx, jQuery"
+}

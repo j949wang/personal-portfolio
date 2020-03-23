@@ -11,7 +11,7 @@ class Landing extends Component {
   constructor() {
     super();
     this.state = {
-      data: null
+      data: "Hi there! I'm Jacky, hope you'll enjoy your stay."
     };
   }
 

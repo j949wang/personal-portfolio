@@ -1,0 +1,8 @@
+{
+  "company": {
+    "name": "Home Depot",
+    "position": "DevOps Developer"
+  },
+  "description": "Modernized tech stack through integration of CI/CD pipelines and automated testing.",
+  "stack": "Ruby, Python, Selenium, Angular"
+}

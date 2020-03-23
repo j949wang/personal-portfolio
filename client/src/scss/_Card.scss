@@ -1,0 +1,119 @@
+.sectionContainer.cardContainer {
+  margin-bottom: 6em;
+}
+
+.cardRow {
+  width: 70%;
+  justify-content: center;
+  border: 1px solid #f6f1ee;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  transition: all 300ms ease-in-out;
+}
+
+.cardRow:hover {
+  transform: translate3d(0px, -1px, 0px);
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+}
+
+.cardCol {
+  justify-content: center;
+}
+
+.cardCol.cardImage {
+  display: flex;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  height: auto;
+  background-color: #fff7f2;
+}
+
+.cardCol.cardImage img {
+  max-width: 50%;
+  height: auto;
+}
+
+.cardCol.cardText {
+  max-height: 227px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.cardTitle {
+  font-family: "baskerville";
+  font-size: 1.8em;
+  color: #d4938b;
+}
+
+.cardTitle .verticalLine {
+  border-color: #d4938b;
+  height: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.cardTitle .positionTitle {
+  font-size: 0.7em;
+  color: #9e9e9e;
+}
+
+.cardInfo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #c09a8d;
+}
+
+.cardStack {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #edae98;
+}
+
+.fade-in-section {
+  opacity: 0;
+  // transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 700ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1199px) {
+  .cardRow.cardRight .cardCol:nth-child(1) {
+    order: 2;
+  }
+
+  .cardRow.cardRight .cardCol:nth-child(2) {
+    order: 1;
+  }
+
+  .cardCol.cardImage {
+    width: 100%;
+    padding-bottom: 2em;
+  }
+
+  .cardCol.cardText {
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cardInfo {
+    display: none;
+  }
+}

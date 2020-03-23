@@ -4,6 +4,7 @@ import Experience from "./components/experience";
 import Landing from "./components/landing";
 import NavBar from "./components/navbar";
 import Welcome from "./components/welcome";
+import Title from "./components/title";
 
 class App extends Component {
   constructor(props) {

@@ -3,6 +3,7 @@ import { Component } from "react";
 import Experience from "./components/experience";
 import Landing from "./components/landing";
 import NavBar from "./components/navbar";
+import Title from "./components/title";
 import Welcome from "./components/welcome";
 import Title from "./components/title";
 
@@ -43,6 +44,7 @@ class App extends Component {
         {this.state.introducing ? null : <Landing />}
         {this.state.introducing ? null : <Title />}
         {this.state.introducing ? null : <Experience />}
+
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

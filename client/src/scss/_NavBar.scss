@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i&display=swap");
 $navbar-light-hover-color: #fa7a70;
 $navbar-light-color: #d4938b;
 $navbar-light-active-color: #97534c;
@@ -19,6 +18,7 @@ $navbar-light-active-color: #97534c;
 
 .navlinks {
   font-size: 1.1em;
+  font-weight: 400;
   color: #ebbbaa;
   text-align: center;
   -webkit-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -32,7 +32,7 @@ $navbar-light-active-color: #97534c;
   background: inherit;
   border-radius: 4px;
   background-position: center;
-  background-image: radial-gradient(circle, transparent 1%, #f6f1ee 1%);
+  background-image: radial-gradient(circle, transparent 1%, #ffffff 1%);
   background-size: 15000%;
 }
 
@@ -41,7 +41,7 @@ $navbar-light-active-color: #97534c;
 }
 
 .navlinks.navBtn:active {
-  background-color: #fac3c3;
+  background-color: #f6dcd3;
   -webkit-transition: background 0s;
   -moz-transition: background 0s;
   -o-transition: background 0s;

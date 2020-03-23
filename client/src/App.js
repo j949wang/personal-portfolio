@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-// import logo from "./logo.svg";
+import Experience from "./components/experience";
 import Landing from "./components/landing";
 import NavBar from "./components/navbar";
 import Welcome from "./components/welcome";
@@ -40,6 +40,8 @@ class App extends Component {
           />
         ) : null}
         {this.state.introducing ? null : <Landing />}
+        {this.state.introducing ? null : <Title />}
+        {this.state.introducing ? null : <Experience />}
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

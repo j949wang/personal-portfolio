@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 class Scroll extends Component {
   render() {
     return (
-      <section id="section05" class="demo">
-        <a href="#section06">
+      <section id="section05" className="demo">
+        <a href="#experience">
           <span></span>
         </a>
       </section>

@@ -21,19 +21,18 @@ $border-radius-lg: 0em;
   border-style: solid;
   border-width: 2px;
   border-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
   animation: fadeinQuote 1.2s;
 }
 
 .quoteRow.quote {
-  width: 60%;
+  width: 70%;
   font-family: "baskerville";
   font-style: italic;
   font-size: 1.5em;
   background-color: #d4938b;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
   animation: fadeinQuote 1.4s;
 }
@@ -51,18 +50,21 @@ $border-radius-lg: 0em;
   animation: fadeinImg 1.5s;
 }
 
-@media screen and (max-width: 1226px) {
+@media screen and (max-width: 1233px) {
   .quoteRow.quoteTitle {
     font-size: 3em;
     background-color: transparent;
+    box-shadow: initial;
     border-width: 0;
     color: #97534c;
   }
 
   .quoteRow.quote {
-    font-size: 2em;
+    font-size: 1.5em;
+    font-style: initial;
     color: #d4938b;
     background-color: transparent;
+    box-shadow: initial;
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -70,7 +72,7 @@ $border-radius-lg: 0em;
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .landingBanner {
     align-items: flex-end;
   }
@@ -90,16 +92,17 @@ $border-radius-lg: 0em;
   .quoteRow.quoteTitle {
     background-color: transparent;
     border-width: 0;
+    box-shadow: initial;
     color: #97534c;
   }
 
   .quoteRow.quote {
     color: #d4938b;
     background-color: transparent;
-    border-style: solid;
+    box-shadow: initial;
+    border-bottom-style: solid;
     border-width: 1px;
     border-color: white;
-    border-radius: 2px;
   }
 }
 

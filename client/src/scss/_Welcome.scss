@@ -157,3 +157,13 @@
     fill: #ffbfbf;
   }
 }
+
+@media screen and (max-width: 460px) {
+  #logoContainer {
+    min-width: 80%;
+  }
+
+  #landingLogo {
+    width: 70vw;
+  }
+}

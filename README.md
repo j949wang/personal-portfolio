@@ -2,4 +2,4 @@
 # personal-portfolio
 
 Personal website
-https://prettywebz.com/rose-gold-font-effects/
+j949wang.github.io/personal-portfolio

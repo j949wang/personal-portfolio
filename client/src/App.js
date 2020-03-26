@@ -5,7 +5,6 @@ import Landing from "./components/landing";
 import NavBar from "./components/navbar";
 import Title from "./components/title";
 import Welcome from "./components/welcome";
-import Title from "./components/title";
 
 class App extends Component {
   constructor(props) {

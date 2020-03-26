@@ -64,7 +64,7 @@ $border-radius-lg: 0em;
     font-style: initial;
     color: #d4938b;
     background-color: transparent;
-    box-shadow: initial;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
     border-style: solid;
     border-width: 1px;
     border-color: white;
@@ -99,7 +99,7 @@ $border-radius-lg: 0em;
   .quoteRow.quote {
     color: #d4938b;
     background-color: transparent;
-    box-shadow: initial;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: white;

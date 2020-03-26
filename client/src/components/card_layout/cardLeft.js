@@ -16,9 +16,8 @@ class CardLeft extends Component {
           <Col className="cardCol cardText" xl={5}>
             <p className="cardTitle">
               {cardSpec.company.name}
-              <span className="verticalLine"></span>
-              <span className="positionTitle">{cardSpec.company.position}</span>
             </p>
+            <p className="positionTitle">{cardSpec.company.position}</p>
             <p className="cardInfo">{cardSpec.description}</p>
             <p className="cardStack">Stack: {cardSpec.stack}</p>
           </Col>

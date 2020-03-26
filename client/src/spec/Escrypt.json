@@ -3,6 +3,6 @@
     "name": "Escrypt - Bosch",
     "position": "Software Developer"
   },
-  "description": "Created RESTful API endpoints to connect demo page with backend encryption services.",
+  "description": "Created RESTful API endpoints to connect client-side requests with backend encryption services.",
   "stack": "JavaScript, Express, Java, HTML, CSS"
 }

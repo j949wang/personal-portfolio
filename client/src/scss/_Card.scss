@@ -201,6 +201,10 @@ $theme-light-pink: #faeeea;
   .cardInfo {
     display: none;
   }
+
+  .cardStack {
+    font-size: initial;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -218,11 +222,20 @@ $theme-light-pink: #faeeea;
 
   .positionTitle {
     font-size: 1em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
 
   .cardCol.cardImage img {
     max-width: 90%;
     height: auto;
+  }
+
+  .cardRight .cardCol.cardImage img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cardStack {
+    font-size: 0.7em;
   }
 }

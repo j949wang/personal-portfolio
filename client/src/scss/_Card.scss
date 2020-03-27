@@ -5,6 +5,10 @@ $theme-light-pink: #faeeea;
   margin-bottom: 2em;
 }
 
+.cardContainer {
+  height: 40vh;
+}
+
 .cardRow {
   width: 70%;
   justify-content: center;
@@ -170,16 +174,17 @@ $theme-light-pink: #faeeea;
   }
 
   .positionTitle {
-    font-size: 1.8em;
+    font-size: 1.4em;
     margin-bottom: 1em;
   }
 
   .cardInfo {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .cardStack {
     font-size: 1em;
+    font-weight: 400;
   }
 }
 

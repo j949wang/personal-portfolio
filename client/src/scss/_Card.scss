@@ -25,6 +25,7 @@ $theme-light-pink: #faeeea;
 
 .cardCol {
   justify-content: center;
+  height: 100%;
 }
 
 .cardCol.cardImage {
@@ -60,7 +61,8 @@ $theme-light-pink: #faeeea;
 }
 
 .cardCol.cardText {
-  max-height: 227px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

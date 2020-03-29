@@ -12,9 +12,10 @@ section {
   height: 100%;
 }
 
-.demo a {
+.demo button {
   z-index: 2;
-  display: inline-block;
+  display: inline-none;
+  border-width: 0;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #d4938b;
@@ -23,10 +24,14 @@ section {
   text-decoration: none;
   transition: opacity 0.7s, color 0.7s;
 }
-.demo a:hover {
+.demo button:hover {
   opacity: 0.5;
   color: $navbar-light-color;
   text-decoration: none;
+}
+
+.demo button:focus {
+  outline: none;
 }
 
 #section05 {
@@ -35,11 +40,11 @@ section {
   align-items: center;
 }
 
-#section05 a {
+#section05 button {
   padding-top: 70px;
 }
 
-#section05 a span {
+#section05 button span {
   position: absolute;
   cursor: pointer;
   top: 3em;

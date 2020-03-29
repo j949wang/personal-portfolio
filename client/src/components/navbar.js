@@ -7,9 +7,31 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 class NavBar extends Component {
+  constructor() {
+    super();
+    this.scrollHome = this.scrollHome.bind(this);
+    this.scrollExperience = this.scrollExperience.bind(this);
+  }
+
+  scrollHome() {
+    window.scrollTo(0, 0);
+  }
+
+  scrollExperience() {
+    let jumbotronHeight = document.getElementsByClassName("landingBanner")[0]
+      .scrollHeight;
+    console.log(jumbotronHeight);
+    window.scrollTo(0, jumbotronHeight);
+  }
+
   render() {
     return (
-      <Navbar className="navigation pt-5 pb-5" variant="light" expand="md" sticky="top">
+      <Navbar
+        className="navigation pt-5 pb-5"
+        variant="light"
+        expand="md"
+        sticky="top"
+      >
         <Navbar.Brand href="#home">Need a Logo...</Navbar.Brand>
         <Navbar.Toggle
           className="navToggleBtn"
@@ -17,11 +39,18 @@ class NavBar extends Component {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="navlinks navBtn ml-2" href="#home">
+            <Nav.Link
+              className="navlinks navBtn ml-2"
+              onClick={this.scrollHome}
+              href="#home"
+            >
               Home
               <FontAwesomeIcon className="ml-1 home-icon" icon={faHome} />
             </Nav.Link>
-            <Nav.Link className="navlinks navBtn ml-2" href="#experience">
+            <Nav.Link
+              className="navlinks navBtn ml-2"
+              onClick={this.scrollExperience}
+            >
               Experience
             </Nav.Link>
             <Nav.Link className="navlinks navBtn ml-2" href="#resume">

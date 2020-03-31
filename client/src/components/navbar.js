@@ -50,6 +50,7 @@ class NavBar extends Component {
             <Nav.Link
               className="navlinks navBtn ml-2"
               onClick={this.scrollExperience}
+              href="#"
             >
               Experience
             </Nav.Link>

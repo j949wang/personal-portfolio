@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.f7bfb249.chunk.css",
-    "main.js": "/personal-portfolio/static/js/main.0b6a7cd7.chunk.js",
-    "main.js.map": "/personal-portfolio/static/js/main.0b6a7cd7.chunk.js.map",
+    "main.css": "/personal-portfolio/static/css/main.006793c6.chunk.css",
+    "main.js": "/personal-portfolio/static/js/main.6dd0f9d7.chunk.js",
+    "main.js.map": "/personal-portfolio/static/js/main.6dd0f9d7.chunk.js.map",
     "runtime-main.js": "/personal-portfolio/static/js/runtime-main.225001ee.js",
     "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.225001ee.js.map",
-    "static/js/2.bf7da42d.chunk.js": "/personal-portfolio/static/js/2.bf7da42d.chunk.js",
-    "static/js/2.bf7da42d.chunk.js.map": "/personal-portfolio/static/js/2.bf7da42d.chunk.js.map",
+    "static/js/2.bb23c942.chunk.js": "/personal-portfolio/static/js/2.bb23c942.chunk.js",
+    "static/js/2.bb23c942.chunk.js.map": "/personal-portfolio/static/js/2.bb23c942.chunk.js.map",
     "index.html": "/personal-portfolio/index.html",
-    "precache-manifest.7c1e25bc42ee10ebe5dd1274968eaaa3.js": "/personal-portfolio/precache-manifest.7c1e25bc42ee10ebe5dd1274968eaaa3.js",
+    "precache-manifest.984ebd943da580816c571cf80d614a59.js": "/personal-portfolio/precache-manifest.984ebd943da580816c571cf80d614a59.js",
     "service-worker.js": "/personal-portfolio/service-worker.js",
-    "static/css/main.f7bfb249.chunk.css.map": "/personal-portfolio/static/css/main.f7bfb249.chunk.css.map",
-    "static/js/2.bf7da42d.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.bf7da42d.chunk.js.LICENSE.txt",
+    "static/css/main.006793c6.chunk.css.map": "/personal-portfolio/static/css/main.006793c6.chunk.css.map",
+    "static/js/2.bb23c942.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.bb23c942.chunk.js.LICENSE.txt",
     "static/media/CA_Glass_Logo_no_bg.png": "/personal-portfolio/static/media/CA_Glass_Logo_no_bg.ce819db2.png",
     "static/media/Scms_logo.png": "/personal-portfolio/static/media/Scms_logo.331f3bbd.png",
     "static/media/homedepot_logo.png": "/personal-portfolio/static/media/homedepot_logo.dd384b56.png",
-    "static/media/totoro-sketch-final.png": "/personal-portfolio/static/media/totoro-sketch-final.947daeef.png"
+    "static/media/totoro-sketch-final.png": "/personal-portfolio/static/media/totoro-sketch-final.947daeef.png",
+    "static/media/totoro_footer_final.PNG": "/personal-portfolio/static/media/totoro_footer_final.59bdc422.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.225001ee.js",
-    "static/js/2.bf7da42d.chunk.js",
-    "static/css/main.f7bfb249.chunk.css",
-    "static/js/main.0b6a7cd7.chunk.js"
+    "static/js/2.bb23c942.chunk.js",
+    "static/css/main.006793c6.chunk.css",
+    "static/js/main.6dd0f9d7.chunk.js"
   ]
 }

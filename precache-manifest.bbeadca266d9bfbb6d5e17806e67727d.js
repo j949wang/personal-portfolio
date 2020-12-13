@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78af9c529dbbbc01ea69d0ccb1b89e32",
+    "revision": "2bc805e50aab7a5f4a6b984050a4889b",
     "url": "/personal-portfolio/index.html"
   },
   {
-    "revision": "b3ff6047779cccf60d7e",
-    "url": "/personal-portfolio/static/css/main.006793c6.chunk.css"
+    "revision": "59164ab22ad3f2a88017",
+    "url": "/personal-portfolio/static/css/main.19a3cd7e.chunk.css"
   },
   {
-    "revision": "2b62d9b0bb8911ff8cf7",
-    "url": "/personal-portfolio/static/js/2.bb23c942.chunk.js"
+    "revision": "0272136293e7e5d79857",
+    "url": "/personal-portfolio/static/js/2.6e04ecd0.chunk.js"
   },
   {
-    "revision": "11a928b57aca5049fe950bf8bcde77c5",
-    "url": "/personal-portfolio/static/js/2.bb23c942.chunk.js.LICENSE.txt"
+    "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
+    "url": "/personal-portfolio/static/js/2.6e04ecd0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3ff6047779cccf60d7e",
-    "url": "/personal-portfolio/static/js/main.6dd0f9d7.chunk.js"
+    "revision": "59164ab22ad3f2a88017",
+    "url": "/personal-portfolio/static/js/main.d40bd040.chunk.js"
   },
   {
     "revision": "fbd52b79a2256129d0f1",
@@ -36,8 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personal-portfolio/static/media/homedepot_logo.dd384b56.png"
   },
   {
-    "revision": "947daeeff9a5fe89b46f38a35fe61511",
-    "url": "/personal-portfolio/static/media/totoro-sketch-final.947daeef.png"
+    "revision": "6905afa2a7ca07db9d4856ba10832e4d",
+    "url": "/personal-portfolio/static/media/myfacefinal.6905afa2.png"
+  },
+  {
+    "revision": "77236a84f0fb1aee678317c4c0ed3458",
+    "url": "/personal-portfolio/static/media/pcc_logo.77236a84.png"
   },
   {
     "revision": "59bdc422aadead5203a5ec720e84b726",

@@ -3,12 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 class NavBar extends Component {
   constructor() {
     super();
+    this.state = {
+      scrolling: false,
+    };
     this.scrollHome = this.scrollHome.bind(this);
     this.scrollExperience = this.scrollExperience.bind(this);
   }
@@ -24,12 +28,32 @@ class NavBar extends Component {
     window.scrollTo(0, jumbotronHeight);
   }
 
+  componentDidMount() {
+    const navView = document.getElementById("contentNav");
+    window.onscroll = function () {
+      if (window.pageYOffset === 0) {
+        navView.classList.remove("nav-not-at-top");
+      } else if (
+        !navView.classList.contains("nav-not-at-top") &&
+        window.pageYOffset !== 0
+      ) {
+        navView.classList.add("nav-not-at-top");
+      }
+    };
+  }
+
+  componentWillUnmount() {
+    window.onscroll = null;
+  }
+
   render() {
     return (
       <Navbar
+        id="contentNav"
         className="navigation pt-5 pb-5"
         variant="light"
         expand="md"
+        onLoad={this.changeOpacity}
         sticky="top"
       >
         <Navbar.Brand href="#home">Need a Logo...</Navbar.Brand>
@@ -64,6 +88,9 @@ class NavBar extends Component {
               </Nav.Link>
               <Nav.Link className="navlinks mr-2 socialIcons" href="#github">
                 <FontAwesomeIcon className="ml-1" icon={faGithub} />
+              </Nav.Link>
+              <Nav.Link className="navlinks mr-2 socialIcons" href="#github">
+                <FontAwesomeIcon className="ml-1" icon={faEnvelope} />
               </Nav.Link>
             </div>
           </Nav>

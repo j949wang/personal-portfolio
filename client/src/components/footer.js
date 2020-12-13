@@ -12,7 +12,7 @@ class Footer extends Component {
           <Col className="footerCol">
             <Image src={TotoroFooter} fluid />
             <p className="signoff">
-              Let's keep in touch, feel free to send me an email:
+              Let's keep in touch:
               <a href="mailto:jiaxiwang99@gmail.com"> jiaxiwang99@gmail.com</a>
             </p>
             <p className="copyright">

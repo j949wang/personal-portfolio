@@ -1,4 +1,4 @@
-$jumbotron-bg: #f6dcd3;
+$jumbotron-bg: #ffffff;
 $jumbotron-color: #95483f;
 $border-radius-lg: 0em;
 
@@ -14,26 +14,28 @@ $border-radius-lg: 0em;
 }
 
 .quoteRow.quoteTitle {
-  width: 80%;
+  width: 90%;
   font-family: "baskerville";
-  font-size: 2.2em;
-  background-color: #97534c;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: white;
+  font-size: 5em;
+  text-align: left;
+  background-color: white;
+  // border-style: solid;
+  // border-width: 2px;
+  // border-color: white;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #c09a8d;
   animation: fadeinQuote 1.2s;
 }
 
 .quoteRow.quote {
-  width: 70%;
-  font-family: "baskerville";
-  font-style: italic;
-  font-size: 1.5em;
-  background-color: #d4938b;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: white;
+  width: 90%;
+  text-align: left;
+  font-family: "montserrat";
+  font-weight: 300;
+  font-size: 1.4em;
+  background-color: white;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #9e9e9e;
   animation: fadeinQuote 1.4s;
 }
 
@@ -50,26 +52,40 @@ $border-radius-lg: 0em;
   animation: fadeinImg 1.5s;
 }
 
-@media screen and (max-width: 1233px) {
-  .quoteRow.quoteTitle {
-    font-size: 3em;
-    background-color: transparent;
-    box-shadow: initial;
-    border-width: 0;
-    color: #97534c;
-  }
+.textContainer {
+  align-items: flex-end;
+}
 
-  .quoteRow.quote {
-    font-size: 1.5em;
-    font-style: initial;
-    color: #d4938b;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    border-radius: 2px;
-  }
+.quoteLine {
+  margin-top: 1em;
+  align-self: flex-start;
+  border-radius: 1em;
+  width: 30%;
+  border-top: solid;
+  border-width: 4px;
+  opacity: 0.4;
+  border-color: #9e9e9e;
+}
+
+.quoteRow.quoteTitle span {
+  color: white;
+  background-color: #c09a8d;
+  padding: 0 0.1em 0.1em 0.1em;
+}
+
+.socialLinks {
+  color: #9e9e9e;
+  font-size: 1.3em;
+}
+
+.socialLinks .ml-1 {
+  margin: 1em 0.7em 0em 0.7em;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.socialLinks .ml-1:hover {
+  color: #ebbbaa;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 767px) {
@@ -89,20 +105,22 @@ $border-radius-lg: 0em;
     order: 2;
   }
 
+  .textContainer {
+    align-items: center;
+  }
+
   .quoteRow.quoteTitle {
-    background-color: transparent;
-    border-width: 0;
-    box-shadow: initial;
-    color: #97534c;
+    width: 80%;
+    text-align: center;
   }
 
   .quoteRow.quote {
-    color: #d4938b;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
-    border-bottom-style: solid;
-    border-width: 3px;
-    border-color: white;
+    text-align: center;
+  }
+
+  .quoteRow.quoteLine {
+    align-self: center;
+    border-style: none;
   }
 }
 

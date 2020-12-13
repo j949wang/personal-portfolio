@@ -1,0 +1,8 @@
+{
+  "company": {
+    "name": "PointClickCare",
+    "position": "Software Engineer"
+  },
+  "description": "Implemented content management service",
+  "stack": "React, Java/Kotlin, Typescript, Postgre, SQLServer"
+}

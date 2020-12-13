@@ -1,10 +1,12 @@
 import React from "react";
 import { Component } from "react";
-import Experience from "./components/experience";
+// import { Route } from "react-router-dom";
+// import Experience from "./components/experience";
 import Footer from "./components/footer";
-import Landing from "./components/landing";
+// import Landing from "./components/landing";
 import NavBar from "./components/navbar";
-import Title from "./components/title";
+// import Title from "./components/title";
+import Home from "./components/home";
 import Welcome from "./components/welcome";
 
 class App extends Component {
@@ -12,7 +14,7 @@ class App extends Component {
     super(props);
     this.state = {
       introducing: true,
-      animation: true
+      animation: true,
     };
     this.welcomeAnimation = this.welcomeAnimation.bind(this);
   }
@@ -20,13 +22,13 @@ class App extends Component {
   welcomeAnimation() {
     setTimeout(() => {
       this.setState({
-        animation: false
+        animation: false,
       });
     }, 3000);
 
     setTimeout(() => {
       this.setState({
-        introducing: false
+        introducing: false,
       });
     }, 4000);
   }
@@ -41,24 +43,11 @@ class App extends Component {
             intro={this.welcomeAnimation}
           />
         ) : null}
-        {this.state.introducing ? null : <Landing />}
+        {this.state.introducing ? null : <Home />}
+        {/* {this.state.introducing ? null : <Landing />}
         {this.state.introducing ? null : <Title />}
-        {this.state.introducing ? null : <Experience />}
+        {this.state.introducing ? null : <Experience />} */}
         {this.state.introducing ? null : <Footer />}
-
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer">
-            Learn React
-          </a>
-        </header> */}
       </div>
     );
   }

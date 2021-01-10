@@ -122,6 +122,11 @@ $border-radius-lg: 0em;
     align-self: center;
     border-style: none;
   }
+
+  .socialLinks .ml-1 {
+    margin: 0em 1em 0em 0em;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
 }
 
 @keyframes fadeinQuote {

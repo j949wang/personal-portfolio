@@ -16,7 +16,7 @@ class Landing extends Component {
     super();
     this.state = {
       data:
-        "Student at the University of Waterloo — currently @Pointclickcare, former IBM.",
+        "Student at the University of Waterloo — currently Soft Eng @Pointclickcare, former IBM.",
     };
   }
 
@@ -49,7 +49,7 @@ class Landing extends Component {
                   {this.state.data}
                   <div className="quoteRow quoteLine"></div>
                   <div className="socialLinks">
-                    <FontAwesomeIcon className="ml-1" icon={faLinkedin} />
+                    <FontAwesomeIcon className="ml-1" icon={faLinkedin} href="https://www.linkedin.com/in/jiaxi-jacky-wang" />
                     <FontAwesomeIcon className="ml-1" icon={faGithub} />
                     <FontAwesomeIcon className="ml-1" icon={faEnvelope} />
                   </div>

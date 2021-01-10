@@ -24,13 +24,13 @@ class App extends Component {
       this.setState({
         animation: false,
       });
-    }, 3000);
+    }, 400); // set to 3000
 
     setTimeout(() => {
       this.setState({
         introducing: false,
       });
-    }, 4000);
+    }, 400); //Set to 4000
   }
 
   render() {

@@ -4,5 +4,5 @@
     "position": "Software Engineer"
   },
   "description": "Implemented content management service",
-  "stack": "React, Java/Kotlin, Typescript, Postgre, SQLServer"
+  "stack": "React, Kotlin, Typescript, Postgre, SQLServer"
 }

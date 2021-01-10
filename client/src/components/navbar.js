@@ -24,23 +24,23 @@ class NavBar extends Component {
   scrollExperience() {
     let jumbotronHeight = document.getElementsByClassName("landingBanner")[0]
       .scrollHeight;
-    console.log(jumbotronHeight);
+    // console.log(jumbotronHeight);
     window.scrollTo(0, jumbotronHeight);
   }
 
-  componentDidMount() {
-    const navView = document.getElementById("contentNav");
-    window.onscroll = function () {
-      if (window.pageYOffset === 0) {
-        navView.classList.remove("nav-not-at-top");
-      } else if (
-        !navView.classList.contains("nav-not-at-top") &&
-        window.pageYOffset !== 0
-      ) {
-        navView.classList.add("nav-not-at-top");
-      }
-    };
-  }
+  // componentDidMount() {
+  //   const navView = document.getElementById("contentNav");
+  //   window.onscroll = function () {
+  //     if (window.pageYOffset === 0) {
+  //       navView.classList.remove("nav-not-at-top");
+  //     } else if (
+  //       !navView.classList.contains("nav-not-at-top") &&
+  //       window.pageYOffset !== 0
+  //     ) {
+  //       navView.classList.add("nav-not-at-top");
+  //     }
+  //   };
+  // }
 
   componentWillUnmount() {
     window.onscroll = null;
@@ -83,13 +83,13 @@ class NavBar extends Component {
             </Nav.Link>
             <div className="verticalLine"></div>
             <div className="socialContainer">
-              <Nav.Link className="navlinks mr-2 socialIcons" href="#linkedin">
+              <Nav.Link className="navlinks mr-2 socialIcons" href="https://www.linkedin.com/in/jiaxi-jacky-wang">
                 <FontAwesomeIcon className="ml-1" icon={faLinkedin} />
               </Nav.Link>
-              <Nav.Link className="navlinks mr-2 socialIcons" href="#github">
+              <Nav.Link className="navlinks mr-2 socialIcons" href="https://github.com/j949wang">
                 <FontAwesomeIcon className="ml-1" icon={faGithub} />
               </Nav.Link>
-              <Nav.Link className="navlinks mr-2 socialIcons" href="#github">
+              <Nav.Link className="navlinks mr-2 socialIcons" href="mailto:jiaxiwang99@gmail.com">
                 <FontAwesomeIcon className="ml-1" icon={faEnvelope} />
               </Nav.Link>
             </div>

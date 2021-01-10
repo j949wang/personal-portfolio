@@ -6,7 +6,7 @@ import PCC from "../spec/PCC.json"
 import CaLogo from "../img/CA_Glass_Logo_no_bg.png";
 import HDLogo from "../img/homedepot_logo.png";
 import ScmsLogo from "../img/Scms_logo.png";
-import PCCLogo from "../img/pcc_logo.png"
+import PCCLogo from "../img/pcc_logo_edit.png"
 import Card from "./card";
 
 class Experience extends Component {

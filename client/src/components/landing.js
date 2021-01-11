@@ -49,9 +49,15 @@ class Landing extends Component {
                   {this.state.data}
                   <div className="quoteRow quoteLine"></div>
                   <div className="socialLinks">
-                    <FontAwesomeIcon className="ml-1" icon={faLinkedin} href="https://www.linkedin.com/in/jiaxi-jacky-wang" />
-                    <FontAwesomeIcon className="ml-1" icon={faGithub} />
-                    <FontAwesomeIcon className="ml-1" icon={faEnvelope} />
+                    <a href="https://www.linkedin.com/in/jiaxi-jacky-wang">
+                      <FontAwesomeIcon className="ml-1" icon={faLinkedin}  />
+                    </a>
+                    <a href="https://github.com/j949wang">
+                      <FontAwesomeIcon className="ml-1" icon={faGithub} />
+                    </a>
+                    <a>
+                      <FontAwesomeIcon className="ml-1" icon={faEnvelope} />
+                    </a>          
                   </div>
                 </div>
               </Col>

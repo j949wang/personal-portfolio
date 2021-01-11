@@ -51,6 +51,7 @@ $theme-light-pink: #faeeea;
 
 .cardCol.cardImage:nth-child(2) {
   border-radius: 0 12px 12px 0;
+  left: 1px;
   background-color: $theme-light-pink;
 }
 
@@ -156,6 +157,11 @@ $theme-light-pink: #faeeea;
   .cardCol.cardImage img {
     max-width: 50%;
     height: auto;
+  }
+
+  .cardCol.cardImage:nth-child(2) img {
+    min-width: initial;
+    max-width: 70%;
   }
 
   .cardTitle {

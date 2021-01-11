@@ -6,6 +6,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+// import Logo from "../img/brandlogo.png";
+import Resume from "../documents/Resume2021 FullStack.pdf"
 
 class NavBar extends Component {
   constructor() {
@@ -28,6 +30,7 @@ class NavBar extends Component {
     window.scrollTo(0, jumbotronHeight);
   }
 
+
   // componentDidMount() {
   //   const navView = document.getElementById("contentNav");
   //   window.onscroll = function () {
@@ -42,9 +45,7 @@ class NavBar extends Component {
   //   };
   // }
 
-  componentWillUnmount() {
-    window.onscroll = null;
-  }
+
 
   render() {
     return (
@@ -56,7 +57,7 @@ class NavBar extends Component {
         onLoad={this.changeOpacity}
         sticky="top"
       >
-        <Navbar.Brand href="#home">Need a Logo...</Navbar.Brand>
+        <Navbar.Brand href="#home"></Navbar.Brand>
         <Navbar.Toggle
           className="navToggleBtn"
           aria-controls="basic-navbar-nav"
@@ -78,7 +79,7 @@ class NavBar extends Component {
             >
               Experience
             </Nav.Link>
-            <Nav.Link className="navlinks navBtn ml-2" href="#resume">
+            <Nav.Link className="navlinks navBtn ml-2" href={Resume}>
               Resumé
             </Nav.Link>
             <div className="verticalLine"></div>

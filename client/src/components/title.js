@@ -50,6 +50,10 @@ class Title extends Component {
 
   }
 
+  componentWillUnmount() {
+    window.onscroll = null;
+  }
+
   render() {
     return (
       <Container id="experience" className="sectionContainer" fluid>

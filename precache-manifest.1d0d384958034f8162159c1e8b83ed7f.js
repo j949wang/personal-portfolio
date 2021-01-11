@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd16a1fba6a68a83897b7e0167a6439c",
+    "revision": "06931797fdcfc95c77f251629b286847",
     "url": "/personal-portfolio/index.html"
   },
   {
-    "revision": "c4ca0baa859a1a02d6f7",
-    "url": "/personal-portfolio/static/css/main.ee318f5e.chunk.css"
+    "revision": "07ff11b0763abd26d1d3",
+    "url": "/personal-portfolio/static/css/main.04c40453.chunk.css"
   },
   {
-    "revision": "806f1cfdb87a93e87b01",
-    "url": "/personal-portfolio/static/js/2.53fc2cab.chunk.js"
+    "revision": "4679192e41166f605602",
+    "url": "/personal-portfolio/static/js/2.d575ec2d.chunk.js"
   },
   {
     "revision": "b2d6c45a1d0695eb177df398c3f22a2b",
-    "url": "/personal-portfolio/static/js/2.53fc2cab.chunk.js.LICENSE.txt"
+    "url": "/personal-portfolio/static/js/2.d575ec2d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c4ca0baa859a1a02d6f7",
-    "url": "/personal-portfolio/static/js/main.feb63dd4.chunk.js"
+    "revision": "07ff11b0763abd26d1d3",
+    "url": "/personal-portfolio/static/js/main.63ebc40f.chunk.js"
   },
   {
     "revision": "fbd52b79a2256129d0f1",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ce819db2d09461b54cbc14417a81b0d0",
     "url": "/personal-portfolio/static/media/CA_Glass_Logo_no_bg.ce819db2.png"
+  },
+  {
+    "revision": "3e77baec4796ff5b8531b266f28d8199",
+    "url": "/personal-portfolio/static/media/Resume2021 FullStack.3e77baec.pdf"
   },
   {
     "revision": "331f3bbdbf5d6a3cd6ab3300f3557123",

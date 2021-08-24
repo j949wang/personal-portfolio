@@ -13,7 +13,7 @@ class Experience extends Component {
   render() {
     return (
       <div id="experienceContainer">
-        <Card imageSrc={PCCLogo} alignment="right" info={PCC}/>
+        <Card imageSrc={PCCLogo} alignment="right" link="pcc" info={PCC}/>
         <Card imageSrc={CaLogo} alignment="left" info={Ibm} />
         <Card imageSrc={ScmsLogo} alignment="right" info={Escrypt} />
         <Card imageSrc={HDLogo} alignment="left" info={HDCanada} />

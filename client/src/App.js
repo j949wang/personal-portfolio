@@ -8,7 +8,7 @@ import NavBar from "./components/navbar";
 // import Title from "./components/title";
 import Home from "./components/home";
 import Welcome from "./components/welcome";
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +45,8 @@ class App extends Component {
               intro={this.welcomeAnimation}
             />
           ) : null}
-          {this.state.introducing ? null : <Route path="/" component={Home}/>}
+          {this.state.introducing ? null : <Route exact={true} path="/personal-portfolio" component={Home}/>}
+          {this.state.introducing ? null : <Route exact={true} path="/experience/pcc" render={() => (<h1>PointClickCare</h1>)}/>}
           {/* {this.state.introducing ? null : <Landing />}
           {this.state.introducing ? null : <Title />}
           {this.state.introducing ? null : <Experience />} */}

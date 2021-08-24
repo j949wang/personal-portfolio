@@ -8,6 +8,7 @@ import NavBar from "./components/navbar";
 // import Title from "./components/title";
 import Home from "./components/home";
 import Welcome from "./components/welcome";
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -24,31 +25,33 @@ class App extends Component {
       this.setState({
         animation: false,
       });
-    }, 3000); // set to 3000
+    }, 0); // set to 3000
 
     setTimeout(() => {
       this.setState({
         introducing: false,
       });
-    }, 4000); //Set to 4000
+    }, 0); //Set to 4000
   }
 
   render() {
     return (
-      <div className="App">
-        {this.state.introducing ? null : <NavBar />}
-        {this.state.introducing ? (
-          <Welcome
-            parentState={this.state.animation}
-            intro={this.welcomeAnimation}
-          />
-        ) : null}
-        {this.state.introducing ? null : <Home />}
-        {/* {this.state.introducing ? null : <Landing />}
-        {this.state.introducing ? null : <Title />}
-        {this.state.introducing ? null : <Experience />} */}
-        {this.state.introducing ? null : <Footer />}
-      </div>
+      <Router>
+        <div className="App">
+          {this.state.introducing ? null : <NavBar />}
+          {this.state.introducing ? (
+            <Welcome
+              parentState={this.state.animation}
+              intro={this.welcomeAnimation}
+            />
+          ) : null}
+          {this.state.introducing ? null : <Route path="/" component={Home}/>}
+          {/* {this.state.introducing ? null : <Landing />}
+          {this.state.introducing ? null : <Title />}
+          {this.state.introducing ? null : <Experience />} */}
+          {this.state.introducing ? null : <Footer />}
+        </div>
+      </Router>
     );
   }
 }

@@ -16,7 +16,7 @@ class Landing extends Component {
     super();
     this.state = {
       data:
-        "Student at the University of Waterloo — currently Soft Eng @Pointclickcare, former IBM.",
+        "Student at the University of Waterloo — currently Soft Eng @Replicant.ai, former IBM.",
     };
   }
 
